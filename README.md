@@ -62,6 +62,12 @@ PokéApp é um aplicativo web que permite aos usuários buscar, visualizar e fav
    http://localhost:5173
    ```
 
+## 🌟 Considerações Finais
+
+Este projeto foi desenvolvido como parte da capacitação em ReactJS para o programa Capacita Brasil / C-JOVEM. O objetivo é aprimorar habilidades no desenvolvimento web utilizando tecnologias modernas e princípios de responsividade.
+
+Qualquer sugestão ou melhoria são bem-vindas!
+
 ## 🔗 API Utilizada
 O projeto consome dados da [PokéAPI](https://pokeapi.co/) para obter informações sobre os Pokémons.
 
