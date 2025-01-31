@@ -12,11 +12,13 @@ export default function Favorites() {
   }, [favorites]);
 
   return (
-    <div className="p-6 bg-gray-100 min-h-screen">
-      <h2 className="text-xl font-bold mb-4">Favoritos</h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+    <div className="container p-5">
+      <h2 className="h3 mb-4">Favoritos</h2>
+      <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
         {pokemons.map((p) => (
-          <CardPokemon key={p.id} name={p.name} image={p.sprites.front_default} />
+          <div key={p.id} className="col">
+            <CardPokemon name={p.name} image={p.sprites.front_default} />
+          </div>
         ))}
       </div>
     </div>

@@ -17,13 +17,17 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="p-6 bg-gray-100 min-h-screen">
+    <div className="container mt-4">
+      <h1 className="text-center text-primary">PokéApp</h1>
       <SearchBar onSearch={setSearch} />
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+      
+      <div className="row mt-4">
         {pokemons
           .filter((p) => p.name.includes(search.toLowerCase()))
           .map((p) => (
-            <CardPokemon key={p.id} name={p.name} image={p.sprites.front_default} />
+            <div key={p.id} className="col-6 col-md-4 col-lg-3 mb-4">
+              <CardPokemon name={p.name} image={p.sprites.front_default} />
+            </div>
           ))}
       </div>
     </div>
